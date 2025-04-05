@@ -274,7 +274,9 @@ body {
     }
     
     .card {
-        font-size: 15px;
+        padding: 4px;
+        border-width: 1.5px;
+        border-radius: 8px;
     }
 }
 

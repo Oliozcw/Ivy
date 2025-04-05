@@ -177,18 +177,26 @@ class WordGame {
             cardElement.className = 'card';
             cardElement.textContent = card.content;
             
+            // 先清除任何可能的样式
+            cardElement.style.fontSize = '';
+            
             // 根据平台和文本长度设置字体大小
-            if (window.innerWidth > 768) { // PC端
-                if (card.content.length > 10) {
-                    cardElement.style.fontSize = '18px'; // PC端长文本18px
+            const isLongText = card.content.length > 10;
+            const isPc = window.innerWidth > 768;
+            
+            if (isPc) {
+                // PC端
+                if (isLongText) {
+                    cardElement.style.fontSize = '18px';
                 } else {
-                    cardElement.style.fontSize = '20px'; // PC端普通文本20px
+                    cardElement.style.fontSize = '20px';
                 }
-            } else { // 移动端
-                if (card.content.length > 10) {
-                    cardElement.style.fontSize = '14px'; // 移动端长文本14px
+            } else {
+                // 移动端 - 增大字体
+                if (isLongText) {
+                    cardElement.style.fontSize = '15px'; // 长文本增大到15px（原14px）
                 } else {
-                    cardElement.style.fontSize = '16px'; // 移动端普通文本16px
+                    cardElement.style.fontSize = '18px'; // 普通文本增大到18px（原16px）
                 }
             }
             
