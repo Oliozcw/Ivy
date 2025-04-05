@@ -181,22 +181,22 @@ class WordGame {
             cardElement.style.fontSize = '';
             
             // 根据平台和文本长度设置字体大小
-            const isLongText = card.content.length > 10;
+            const isLongText = card.content.length > 8;
             const isPc = window.innerWidth > 768;
             
             if (isPc) {
                 // PC端
                 if (isLongText) {
-                    cardElement.style.fontSize = '18px';
+                    cardElement.style.fontSize = '20px';
                 } else {
                     cardElement.style.fontSize = '20px';
                 }
             } else {
                 // 移动端 - 增大字体
                 if (isLongText) {
-                    cardElement.style.fontSize = '18px'; // 长文本增大到15px（原14px）
+                    cardElement.style.fontSize = '15px'; // 长文本增大到15px（原14px）
                 } else {
-                    cardElement.style.fontSize = '20px'; // 普通文本增大到18px（原16px）
+                    cardElement.style.fontSize = '16px'; // 普通文本增大到18px（原16px）
                 }
             }
             

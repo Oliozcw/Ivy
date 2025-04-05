@@ -143,10 +143,10 @@ body {
 
 .game-board {
     display: grid;
-    grid-template-columns: repeat(6, 1fr) !important;
+    grid-template-columns: repeat(6, 1fr);
     gap: 12px;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding: 20px;
     justify-content: center;
 }
 
@@ -269,7 +269,7 @@ body {
     }
 
     .game-board {
-        grid-template-columns: repeat(4, 1fr) !important;
+        padding: 10px;
         gap: 8px;
     }
     
@@ -293,9 +293,8 @@ body {
     }
 
     .game-board {
-        grid-template-columns: repeat(4, 1fr);
+        padding: 10px;
         gap: 6px;
-        padding: 0;
     }
     
     .card {
@@ -322,5 +321,17 @@ body {
         font-size: 10px;
         padding: 3px;
         min-height: 25px;
+    }
+}
+
+/* 游戏界面容器 */
+#gameScreen {
+    padding: 30px; /* PC端默认内边距 */
+}
+
+/* 移动端容器内边距调整 */
+@media (max-width: 768px) {
+    #gameScreen {
+        padding: 15px 10px; /* 左右设为10px */
     }
 } 
