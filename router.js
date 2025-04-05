@@ -1,10 +1,11 @@
 class Router {
     constructor() {
+        // 使用CONFIG中的路由配置
         this.routes = {
             '': this.showDifficultySelection,
-            '#rui': () => this.showLessonSelection('睿学'),
-            '#jing': () => this.showLessonSelection('精学'),
-            '#hao': () => this.showLessonSelection('好学')
+            '#rui': () => this.showLessonSelection(CONFIG.ROUTES.HASH_TO_DIFFICULTY['#rui']),
+            '#jing': () => this.showLessonSelection(CONFIG.ROUTES.HASH_TO_DIFFICULTY['#jing']),
+            '#hao': () => this.showLessonSelection(CONFIG.ROUTES.HASH_TO_DIFFICULTY['#hao'])
         };
 
         // 页面完全加载后才处理路由

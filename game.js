@@ -81,12 +81,7 @@ class WordGame {
     }
 
     getDifficultyRoute() {
-        const routes = {
-            '睿学': 'rui',
-            '精学': 'jing',
-            '好学': 'hao'
-        };
-        return routes[this.selectedDifficulty];
+        return CONFIG.ROUTES.DIFFICULTIES[this.selectedDifficulty];
     }
 
     initializeLessonSelection(difficulty) {
@@ -177,41 +172,25 @@ class WordGame {
     renderGameBoard() {
         this.gameBoard.innerHTML = '';
         
-        // 强制应用6列类
-        if (window.innerWidth > 1024) {
-            this.gameBoard.classList.add('six-columns');
-        } else {
-            this.gameBoard.classList.remove('six-columns');
-        }
-        
-        // 计算最大文本长度，用于统一缩放
-        let maxLength = 0;
-        this.cards.forEach(card => {
-            maxLength = Math.max(maxLength, card.content.length);
-        });
-        
         this.cards.forEach((card, index) => {
             const cardElement = document.createElement('div');
             cardElement.className = 'card';
             cardElement.textContent = card.content;
             
-            // 统一的字体大小调整逻辑
-            if (card.content.length > 8) {
-                // 使用一致的比例缩放
-                const scaleFactor = Math.max(0.7, 1 - (card.content.length / 30));
-                cardElement.style.fontSize = `${scaleFactor}em`;
+            // 统一的字体大小处理，只根据长度调整，不区分中英文
+            if (card.content.length > 12) {
+                cardElement.style.fontSize = '0.9em'; // 长文本略小
+            } else if (card.content.length > 8) {
+                cardElement.style.fontSize = '0.95em'; // 中等长度
+            } else {
+                cardElement.style.fontSize = '1em'; // 默认大小
             }
             
             cardElement.addEventListener('click', () => this.handleCardClick(index));
             this.gameBoard.appendChild(cardElement);
         });
         
-        // 确保布局调整
         this.adjustGameBoard();
-        
-        // 打印当前列数确认
-        const style = window.getComputedStyle(this.gameBoard);
-        console.log('当前游戏板列数:', style.gridTemplateColumns);
     }
 
     handleCardClick(index) {
@@ -332,29 +311,19 @@ class WordGame {
 
     async loadVocabularyData() {
         try {
-            const response = await fetch('./data/json/vocabulary.json');
+            const response = await fetch(CONFIG.DATA_PATH);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             this.vocabularyData = await response.json();
-            console.log("词汇数据加载成功:", this.vocabularyData);
             
+            // 检查URL hash
             const hash = window.location.hash;
-            if (hash === '#rui' || hash === '#jing' || hash === '#hao') {
-                const difficulty = {
-                    '#rui': '睿学',
-                    '#jing': '精学', 
-                    '#hao': '好学'
-                }[hash];
-                
-                if (difficulty) {
-                    this.selectedDifficulty = difficulty;
-                }
+            if (CONFIG.ROUTES.HASH_TO_DIFFICULTY[hash]) {
+                this.selectedDifficulty = CONFIG.ROUTES.HASH_TO_DIFFICULTY[hash];
             }
         } catch (error) {
             console.error('Failed to load vocabulary data:', error);
-            alert('加载词汇数据失败，请确保json文件在正确位置！路径: ./data/json/vocabulary.json');
-            
             this.createMockData();
         }
     }
