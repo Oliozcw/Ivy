@@ -194,9 +194,9 @@ class WordGame {
             } else {
                 // 移动端 - 增大字体
                 if (isLongText) {
-                    cardElement.style.fontSize = '15px'; // 长文本增大到15px（原14px）
+                    cardElement.style.fontSize = '18px'; // 长文本增大到15px（原14px）
                 } else {
-                    cardElement.style.fontSize = '18px'; // 普通文本增大到18px（原16px）
+                    cardElement.style.fontSize = '20px'; // 普通文本增大到18px（原16px）
                 }
             }
             
