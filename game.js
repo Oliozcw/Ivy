@@ -177,13 +177,19 @@ class WordGame {
             cardElement.className = 'card';
             cardElement.textContent = card.content;
             
-            // 统一的字体大小处理，只根据长度调整，不区分中英文
-            if (card.content.length > 12) {
-                cardElement.style.fontSize = '0.9em'; // 长文本略小
-            } else if (card.content.length > 8) {
-                cardElement.style.fontSize = '0.95em'; // 中等长度
-            } else {
-                cardElement.style.fontSize = '1em'; // 默认大小
+            // 根据平台和文本长度设置字体大小
+            if (window.innerWidth > 768) { // PC端
+                if (card.content.length > 10) {
+                    cardElement.style.fontSize = '18px'; // PC端长文本18px
+                } else {
+                    cardElement.style.fontSize = '20px'; // PC端普通文本20px
+                }
+            } else { // 移动端
+                if (card.content.length > 10) {
+                    cardElement.style.fontSize = '14px'; // 移动端长文本14px
+                } else {
+                    cardElement.style.fontSize = '16px'; // 移动端普通文本16px
+                }
             }
             
             cardElement.addEventListener('click', () => this.handleCardClick(index));
