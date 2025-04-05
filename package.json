@@ -1,0 +1,11 @@
+{
+  "name": "word-matching-game",
+  "version": "1.0.0",
+  "description": "Word matching game with Excel data processing",
+  "scripts": {
+    "process-data": "node scripts/excel-to-json.js"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+} 

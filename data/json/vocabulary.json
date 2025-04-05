@@ -1,0 +1,2792 @@
+{
+  "睿学": {
+    "1": [
+      {
+        "english": "weather",
+        "chinese": "天气"
+      },
+      {
+        "english": "hot",
+        "chinese": "炎热的"
+      },
+      {
+        "english": "warm",
+        "chinese": "温暖的"
+      },
+      {
+        "english": "cool",
+        "chinese": "凉爽的"
+      },
+      {
+        "english": "cold",
+        "chinese": "寒冷的"
+      },
+      {
+        "english": "foggy",
+        "chinese": "有雾的"
+      },
+      {
+        "english": "rainy",
+        "chinese": "多雨的"
+      },
+      {
+        "english": "sunny",
+        "chinese": "晴朗的"
+      },
+      {
+        "english": "windy",
+        "chinese": "有风的"
+      },
+      {
+        "english": "dry",
+        "chinese": "干燥的"
+      },
+      {
+        "english": "spring",
+        "chinese": "春天"
+      },
+      {
+        "english": "summer",
+        "chinese": "夏天"
+      },
+      {
+        "english": "autumn",
+        "chinese": "秋天"
+      },
+      {
+        "english": "winter",
+        "chinese": "冬天"
+      }
+    ],
+    "2": [
+      {
+        "english": "season",
+        "chinese": "季节"
+      },
+      {
+        "english": "plant flowers",
+        "chinese": "种花"
+      },
+      {
+        "english": "go to the park",
+        "chinese": "去公园"
+      },
+      {
+        "english": "go swimming",
+        "chinese": "游泳"
+      },
+      {
+        "english": "eat ice cream",
+        "chinese": "吃冰淇淋"
+      },
+      {
+        "english": "fly kites",
+        "chinese": "放风筝"
+      },
+      {
+        "english": "go hiking",
+        "chinese": "去徒步"
+      },
+      {
+        "english": "eat hotpot",
+        "chinese": "吃火锅"
+      },
+      {
+        "english": "wear a scarf",
+        "chinese": "戴围巾"
+      },
+      {
+        "english": "feather",
+        "chinese": "羽毛"
+      },
+      {
+        "english": "thunder",
+        "chinese": "雷声"
+      },
+      {
+        "english": "lightning",
+        "chinese": "闪电"
+      },
+      {
+        "english": "a sunny smile",
+        "chinese": "阳光般的微笑"
+      },
+      {
+        "english": "friendly",
+        "chinese": "友善的"
+      }
+    ],
+    "3": [
+      {
+        "english": "festival",
+        "chinese": "节日"
+      },
+      {
+        "english": "Chinese New Year",
+        "chinese": "农历新年"
+      },
+      {
+        "english": "get",
+        "chinese": "收到"
+      },
+      {
+        "english": "lucky money",
+        "chinese": "压岁钱"
+      },
+      {
+        "english": "watch",
+        "chinese": "看"
+      },
+      {
+        "english": "fireworks",
+        "chinese": "烟花（复数）"
+      },
+      {
+        "english": "Mid-Autumn Festival",
+        "chinese": "中秋节"
+      },
+      {
+        "english": "eat",
+        "chinese": "吃"
+      },
+      {
+        "english": "moon cakes",
+        "chinese": "月饼（复数）"
+      },
+      {
+        "english": "play with",
+        "chinese": "和……玩/玩某物"
+      },
+      {
+        "english": "lanterns",
+        "chinese": "灯笼（复数）"
+      },
+      {
+        "english": "Dragon Boat Festival",
+        "chinese": "端午节，龙舟节"
+      },
+      {
+        "english": "races",
+        "chinese": "比赛（复数）"
+      },
+      {
+        "english": "rice dumplings",
+        "chinese": "粽子（复数）"
+      }
+    ],
+    "4": [
+      {
+        "english": "Christmas",
+        "chinese": "圣诞节"
+      },
+      {
+        "english": "give presents",
+        "chinese": "送礼物"
+      },
+      {
+        "english": "send cards",
+        "chinese": "寄贺卡"
+      },
+      {
+        "english": "Easter",
+        "chinese": "复活节"
+      },
+      {
+        "english": "chocolate",
+        "chinese": "巧克力"
+      },
+      {
+        "english": "website",
+        "chinese": "网站"
+      },
+      {
+        "english": "Macau",
+        "chinese": "澳门"
+      },
+      {
+        "english": "Hong Kong",
+        "chinese": "香港"
+      },
+      {
+        "english": "everywhere",
+        "chinese": "到处"
+      },
+      {
+        "english": "ice cream",
+        "chinese": "冰淇淋"
+      },
+      {
+        "english": "salty",
+        "chinese": "咸的"
+      },
+      {
+        "english": "inside",
+        "chinese": "里面"
+      },
+      {
+        "english": "pomelo",
+        "chinese": "柚子"
+      },
+      {
+        "english": "photo",
+        "chinese": "照片"
+      }
+    ],
+    "5": [
+      {
+        "english": "have barbecues",
+        "chinese": "烧烤"
+      },
+      {
+        "english": "colourful",
+        "chinese": "色彩缤纷的"
+      },
+      {
+        "english": "smell",
+        "chinese": "闻到"
+      },
+      {
+        "english": "always",
+        "chinese": "总是"
+      },
+      {
+        "english": "holiday",
+        "chinese": "假日；度假期"
+      },
+      {
+        "english": "which",
+        "chinese": "哪一个"
+      },
+      {
+        "english": "best",
+        "chinese": "最"
+      },
+      {
+        "english": "why",
+        "chinese": "为什么"
+      },
+      {
+        "english": "because",
+        "chinese": "因为"
+      },
+      {
+        "english": "Chinese New Year",
+        "chinese": "春节"
+      },
+      {
+        "english": "Mid-Autumn Festival",
+        "chinese": "中秋节"
+      },
+      {
+        "english": "Dragon Boat Festival",
+        "chinese": "端午节，龙舟节"
+      },
+      {
+        "english": "Christmas",
+        "chinese": "圣诞节"
+      },
+      {
+        "english": "Easter",
+        "chinese": "复活节"
+      }
+    ],
+    "6": [
+      {
+        "english": "event",
+        "chinese": "事件；活动"
+      },
+      {
+        "english": "Open Day",
+        "chinese": "开放日"
+      },
+      {
+        "english": "Speech Day",
+        "chinese": "毕业典礼；演讲日"
+      },
+      {
+        "english": "Parents' Day",
+        "chinese": "家长日"
+      },
+      {
+        "english": "Sports Day",
+        "chinese": "运动会"
+      },
+      {
+        "english": "the school picnic",
+        "chinese": "学校野餐；学校郊游"
+      },
+      {
+        "english": "the school fair",
+        "chinese": "学校游园会；学校义卖会"
+      },
+      {
+        "english": "the school concert",
+        "chinese": "学校音乐会"
+      },
+      {
+        "english": "the swimming gala",
+        "chinese": "游泳比赛"
+      },
+      {
+        "english": "handbook",
+        "chinese": "手册"
+      },
+      {
+        "english": "wait",
+        "chinese": "等待"
+      },
+      {
+        "english": "trumpet",
+        "chinese": "小号"
+      },
+      {
+        "english": "idea",
+        "chinese": "主意"
+      },
+      {
+        "english": "super",
+        "chinese": "超级（棒）的"
+      }
+    ],
+    "7": [
+      {
+        "english": "date",
+        "chinese": "日期"
+      },
+      {
+        "english": "month",
+        "chinese": "月份"
+      },
+      {
+        "english": "January",
+        "chinese": "一月"
+      },
+      {
+        "english": "February",
+        "chinese": "二月"
+      },
+      {
+        "english": "March",
+        "chinese": "三月"
+      },
+      {
+        "english": "April",
+        "chinese": "四月"
+      },
+      {
+        "english": "May",
+        "chinese": "五月"
+      },
+      {
+        "english": "June",
+        "chinese": "六月"
+      },
+      {
+        "english": "July",
+        "chinese": "七月"
+      },
+      {
+        "english": "August",
+        "chinese": "八月"
+      },
+      {
+        "english": "September",
+        "chinese": "九月"
+      },
+      {
+        "english": "October",
+        "chinese": "十月"
+      },
+      {
+        "english": "November",
+        "chinese": "十一月"
+      },
+      {
+        "english": "December",
+        "chinese": "十二月"
+      }
+    ],
+    "8": [
+      {
+        "english": "when",
+        "chinese": "什么时候"
+      },
+      {
+        "english": "first (1st)",
+        "chinese": "第一（的）"
+      },
+      {
+        "english": "second (2nd)",
+        "chinese": "第二（的）"
+      },
+      {
+        "english": "third (3rd)",
+        "chinese": "第三（的）"
+      },
+      {
+        "english": "fourth (4th)",
+        "chinese": "第四（的）"
+      },
+      {
+        "english": "fifth (5th)",
+        "chinese": "第五（的）"
+      },
+      {
+        "english": "sixth (6th)",
+        "chinese": "第六（的）"
+      },
+      {
+        "english": "seventh (7th)",
+        "chinese": "第七（的）"
+      },
+      {
+        "english": "eighth (8th)",
+        "chinese": "第八（的）"
+      },
+      {
+        "english": "ninth (9th)",
+        "chinese": "第九（的）"
+      },
+      {
+        "english": "tenth (10th)",
+        "chinese": "第十（的）"
+      },
+      {
+        "english": "eleventh (11th)",
+        "chinese": "第十一（的）"
+      },
+      {
+        "english": "twelfth (12th)",
+        "chinese": "第十二（的）"
+      },
+      {
+        "english": "fifteenth (15th)",
+        "chinese": "第十五（的）"
+      }
+    ],
+    "9": [
+      {
+        "english": "place",
+        "chinese": "地方；地点"
+      },
+      {
+        "english": "classroom",
+        "chinese": "教室"
+      },
+      {
+        "english": "art room",
+        "chinese": "美术室"
+      },
+      {
+        "english": "computer room",
+        "chinese": "电脑室"
+      },
+      {
+        "english": "music room",
+        "chinese": "音乐室"
+      },
+      {
+        "english": "library",
+        "chinese": "图书馆"
+      },
+      {
+        "english": "school hall",
+        "chinese": "学校礼堂"
+      },
+      {
+        "english": "lift",
+        "chinese": "电梯（直梯）"
+      },
+      {
+        "english": "toilets",
+        "chinese": "厕所（复数）"
+      },
+      {
+        "english": "visit",
+        "chinese": "参观"
+      },
+      {
+        "english": "boring",
+        "chinese": "无聊的"
+      },
+      {
+        "english": "next to",
+        "chinese": "在……旁边"
+      },
+      {
+        "english": "on the left",
+        "chinese": "在左边"
+      },
+      {
+        "english": "on the right",
+        "chinese": "在右边"
+      }
+    ],
+    "10": [
+      {
+        "english": "ground floor",
+        "chinese": "地面层（G/F)"
+      },
+      {
+        "english": "first floor",
+        "chinese": "一楼（1/F)"
+      },
+      {
+        "english": "second floor",
+        "chinese": "二楼（2/F)"
+      },
+      {
+        "english": "third floor",
+        "chinese": "三楼（3/F)"
+      },
+      {
+        "english": "fourth floor",
+        "chinese": "四楼（4/F)"
+      },
+      {
+        "english": "fifth floor",
+        "chinese": "五楼（5/F)"
+      },
+      {
+        "english": "sixth floor",
+        "chinese": "六楼（6/F)"
+      },
+      {
+        "english": "draw",
+        "chinese": "画画"
+      },
+      {
+        "english": "paint",
+        "chinese": "绘画"
+      },
+      {
+        "english": "storybook",
+        "chinese": "故事书"
+      },
+      {
+        "english": "game",
+        "chinese": "游戏"
+      },
+      {
+        "english": "guess",
+        "chinese": "猜测"
+      },
+      {
+        "english": "can",
+        "chinese": "可以"
+      },
+      {
+        "english": "where",
+        "chinese": "哪里"
+      }
+    ],
+    "11": [
+      {
+        "english": "room",
+        "chinese": "房间"
+      },
+      {
+        "english": "cool",
+        "chinese": "棒，酷"
+      },
+      {
+        "english": "food",
+        "chinese": "食物"
+      },
+      {
+        "english": "moon",
+        "chinese": "月亮"
+      },
+      {
+        "english": "balloon",
+        "chinese": "气球"
+      },
+      {
+        "english": "hoop",
+        "chinese": "呼啦圈"
+      },
+      {
+        "english": "root",
+        "chinese": "根"
+      },
+      {
+        "english": "lie",
+        "chinese": "位于"
+      },
+      {
+        "english": "swimming pool",
+        "chinese": "游泳池"
+      },
+      {
+        "english": "cosy",
+        "chinese": "温暖舒适的"
+      },
+      {
+        "english": "many",
+        "chinese": "很多的"
+      },
+      {
+        "english": "more",
+        "chinese": "更多的"
+      },
+      {
+        "english": "picture",
+        "chinese": "图画，图片"
+      },
+      {
+        "english": "follow",
+        "chinese": "跟着"
+      }
+    ],
+    "12": [
+      {
+        "english": "country park",
+        "chinese": "郊野公园"
+      },
+      {
+        "english": "beach",
+        "chinese": "沙滩"
+      },
+      {
+        "english": "fast food shop",
+        "chinese": "快餐店"
+      },
+      {
+        "english": "restaurant",
+        "chinese": "餐厅；饭店"
+      },
+      {
+        "english": "hotel",
+        "chinese": "酒店；旅馆"
+      },
+      {
+        "english": "shopping centre",
+        "chinese": "购物中心；商场"
+      },
+      {
+        "english": "cinema",
+        "chinese": "电影院"
+      },
+      {
+        "english": "have a picnic",
+        "chinese": "野餐"
+      },
+      {
+        "english": "have a barbecue",
+        "chinese": "烧烤"
+      },
+      {
+        "english": "look at shells",
+        "chinese": "观赏贝壳"
+      },
+      {
+        "english": "build sandcastles",
+        "chinese": "堆沙堡"
+      },
+      {
+        "english": "eat pizza",
+        "chinese": "吃披萨"
+      },
+      {
+        "english": "have a buffet meal",
+        "chinese": "吃自助餐"
+      },
+      {
+        "english": "watch a film",
+        "chinese": "看电影"
+      }
+    ],
+    "13": [
+      {
+        "english": "weekend",
+        "chinese": "周末"
+      },
+      {
+        "english": "hamburger",
+        "chinese": "汉堡"
+      },
+      {
+        "english": "eat dim sum",
+        "chinese": "吃点心"
+      },
+      {
+        "english": "Sunday",
+        "chinese": "星期日"
+      },
+      {
+        "english": "bored",
+        "chinese": "（感到）无聊的"
+      },
+      {
+        "english": "trousers",
+        "chinese": "裤子"
+      },
+      {
+        "english": "idea",
+        "chinese": "主意"
+      },
+      {
+        "english": "different",
+        "chinese": "不同的"
+      },
+      {
+        "english": "rain",
+        "chinese": "下雨"
+      },
+      {
+        "english": "half an hour",
+        "chinese": "半小时"
+      },
+      {
+        "english": "free",
+        "chinese": "免费的；自由的"
+      },
+      {
+        "english": "coupon",
+        "chinese": "优惠券"
+      },
+      {
+        "english": "delivery",
+        "chinese": "外送服务"
+      },
+      {
+        "english": "spend",
+        "chinese": "消费，花费"
+      }
+    ],
+    "14": [
+      {
+        "english": "shopping",
+        "chinese": "购物"
+      },
+      {
+        "english": "fun",
+        "chinese": "乐趣"
+      },
+      {
+        "english": "backpack",
+        "chinese": "背包"
+      },
+      {
+        "english": "handbag",
+        "chinese": "手提包"
+      },
+      {
+        "english": "wallet",
+        "chinese": "皮夹，钱包"
+      },
+      {
+        "english": "purse",
+        "chinese": "（女士) 钱包"
+      },
+      {
+        "english": "watch",
+        "chinese": "手表"
+      },
+      {
+        "english": "water bottle",
+        "chinese": "水壶"
+      },
+      {
+        "english": "lunchbox",
+        "chinese": "午餐盒"
+      },
+      {
+        "english": "photo frame",
+        "chinese": "相框"
+      },
+      {
+        "english": "scene",
+        "chinese": "场景"
+      },
+      {
+        "english": "sale",
+        "chinese": "出售，销售"
+      },
+      {
+        "english": "garage",
+        "chinese": "车库"
+      },
+      {
+        "english": "lots of",
+        "chinese": "许多"
+      }
+    ],
+    "15": [
+      {
+        "english": "how much",
+        "chinese": "多少钱"
+      },
+      {
+        "english": "It's=It is",
+        "chinese": "它是......"
+      },
+      {
+        "english": "They're=They are",
+        "chinese": "它（他/她）们是......"
+      },
+      {
+        "english": "want",
+        "chinese": "想要"
+      },
+      {
+        "english": "sell",
+        "chinese": "卖"
+      },
+      {
+        "english": "Renminbi",
+        "chinese": "人民币（RMB）"
+      },
+      {
+        "english": "dollar",
+        "chinese": "元；美元"
+      },
+      {
+        "english": "forty",
+        "chinese": "四十"
+      },
+      {
+        "english": "fifty",
+        "chinese": "五十"
+      },
+      {
+        "english": "sixty",
+        "chinese": "六十"
+      },
+      {
+        "english": "seventy",
+        "chinese": "七十"
+      },
+      {
+        "english": "eighty",
+        "chinese": "八十"
+      },
+      {
+        "english": "ninety",
+        "chinese": "九十"
+      },
+      {
+        "english": "a / one hundred",
+        "chinese": "一百"
+      }
+    ],
+    "16": [
+      {
+        "english": "fifty-one",
+        "chinese": "五十一"
+      },
+      {
+        "english": "sixty-four",
+        "chinese": "六十四"
+      },
+      {
+        "english": "seventy-three",
+        "chinese": "七十三"
+      },
+      {
+        "english": "eighty-seven",
+        "chinese": "八十七"
+      },
+      {
+        "english": "ninety-five",
+        "chinese": "九十五"
+      },
+      {
+        "english": "photo",
+        "chinese": "照片"
+      },
+      {
+        "english": "phone",
+        "chinese": "手机"
+      },
+      {
+        "english": "elephant",
+        "chinese": "大象"
+      },
+      {
+        "english": "dolphin",
+        "chinese": "海豚"
+      },
+      {
+        "english": "giraffe",
+        "chinese": "长颈鹿"
+      },
+      {
+        "english": "money",
+        "chinese": "钱"
+      },
+      {
+        "english": "outside",
+        "chinese": "在……的外面，在户外"
+      },
+      {
+        "english": "buy",
+        "chinese": "购买"
+      },
+      {
+        "english": "a lot of",
+        "chinese": "许多"
+      }
+    ]
+  },
+  "精学": {
+    "1": [
+      {
+        "english": "weather",
+        "chinese": "天气"
+      },
+      {
+        "english": "hot",
+        "chinese": "炎热的"
+      },
+      {
+        "english": "warm",
+        "chinese": "温暖的"
+      },
+      {
+        "english": "cool",
+        "chinese": "凉爽的"
+      },
+      {
+        "english": "cold",
+        "chinese": "寒冷的"
+      },
+      {
+        "english": "foggy",
+        "chinese": "有雾的"
+      },
+      {
+        "english": "rainy",
+        "chinese": "多雨的"
+      },
+      {
+        "english": "sunny",
+        "chinese": "晴朗的"
+      },
+      {
+        "english": "windy",
+        "chinese": "有风的"
+      },
+      {
+        "english": "dry",
+        "chinese": "干燥的"
+      },
+      {
+        "english": "spring",
+        "chinese": "春天"
+      },
+      {
+        "english": "summer",
+        "chinese": "夏天"
+      },
+      {
+        "english": "autumn",
+        "chinese": "秋天"
+      },
+      {
+        "english": "winter",
+        "chinese": "冬天"
+      }
+    ],
+    "2": [
+      {
+        "english": "season",
+        "chinese": "季节"
+      },
+      {
+        "english": "plant flowers",
+        "chinese": "种花"
+      },
+      {
+        "english": "go to the park",
+        "chinese": "去公园"
+      },
+      {
+        "english": "go swimming",
+        "chinese": "游泳"
+      },
+      {
+        "english": "eat ice cream",
+        "chinese": "吃冰淇淋"
+      },
+      {
+        "english": "fly kites",
+        "chinese": "放风筝"
+      },
+      {
+        "english": "go hiking",
+        "chinese": "去徒步"
+      },
+      {
+        "english": "eat hotpot",
+        "chinese": "吃火锅"
+      },
+      {
+        "english": "wear a scarf",
+        "chinese": "戴围巾"
+      },
+      {
+        "english": "feather",
+        "chinese": "羽毛"
+      },
+      {
+        "english": "thunder",
+        "chinese": "雷声"
+      },
+      {
+        "english": "lightning",
+        "chinese": "闪电"
+      },
+      {
+        "english": "a sunny smile",
+        "chinese": "阳光般的微笑"
+      },
+      {
+        "english": "friendly",
+        "chinese": "友善的"
+      }
+    ],
+    "3": [
+      {
+        "english": "festival",
+        "chinese": "节日"
+      },
+      {
+        "english": "Chinese New Year",
+        "chinese": "农历新年"
+      },
+      {
+        "english": "get",
+        "chinese": "收到"
+      },
+      {
+        "english": "lucky money",
+        "chinese": "压岁钱"
+      },
+      {
+        "english": "watch",
+        "chinese": "看"
+      },
+      {
+        "english": "fireworks",
+        "chinese": "烟花（复数）"
+      },
+      {
+        "english": "Mid-Autumn Festival",
+        "chinese": "中秋节"
+      },
+      {
+        "english": "eat",
+        "chinese": "吃"
+      },
+      {
+        "english": "moon cakes",
+        "chinese": "月饼（复数）"
+      },
+      {
+        "english": "play with",
+        "chinese": "和……玩/玩某物"
+      },
+      {
+        "english": "lanterns",
+        "chinese": "灯笼（复数）"
+      },
+      {
+        "english": "Dragon Boat Festival",
+        "chinese": "端午节，龙舟节"
+      },
+      {
+        "english": "races",
+        "chinese": "比赛（复数）"
+      },
+      {
+        "english": "rice dumplings",
+        "chinese": "粽子（复数）"
+      }
+    ],
+    "4": [
+      {
+        "english": "Christmas",
+        "chinese": "圣诞节"
+      },
+      {
+        "english": "give presents",
+        "chinese": "送礼物"
+      },
+      {
+        "english": "send cards",
+        "chinese": "寄贺卡"
+      },
+      {
+        "english": "Easter",
+        "chinese": "复活节"
+      },
+      {
+        "english": "chocolate",
+        "chinese": "巧克力"
+      },
+      {
+        "english": "website",
+        "chinese": "网站"
+      },
+      {
+        "english": "Macau",
+        "chinese": "澳门"
+      },
+      {
+        "english": "Hong Kong",
+        "chinese": "香港"
+      },
+      {
+        "english": "everywhere",
+        "chinese": "到处"
+      },
+      {
+        "english": "ice cream",
+        "chinese": "冰淇淋"
+      },
+      {
+        "english": "salty",
+        "chinese": "咸的"
+      },
+      {
+        "english": "inside",
+        "chinese": "里面"
+      },
+      {
+        "english": "pomelo",
+        "chinese": "柚子"
+      },
+      {
+        "english": "photo",
+        "chinese": "照片"
+      }
+    ],
+    "5": [
+      {
+        "english": "have barbecues",
+        "chinese": "烧烤"
+      },
+      {
+        "english": "colourful",
+        "chinese": "色彩缤纷的"
+      },
+      {
+        "english": "smell",
+        "chinese": "闻到"
+      },
+      {
+        "english": "always",
+        "chinese": "总是"
+      },
+      {
+        "english": "holiday",
+        "chinese": "假日；度假期"
+      },
+      {
+        "english": "which",
+        "chinese": "哪一个"
+      },
+      {
+        "english": "best",
+        "chinese": "最"
+      },
+      {
+        "english": "why",
+        "chinese": "为什么"
+      },
+      {
+        "english": "because",
+        "chinese": "因为"
+      },
+      {
+        "english": "Chinese New Year",
+        "chinese": "春节"
+      },
+      {
+        "english": "Mid-Autumn Festival",
+        "chinese": "中秋节"
+      },
+      {
+        "english": "Dragon Boat Festival",
+        "chinese": "端午节，龙舟节"
+      },
+      {
+        "english": "Christmas",
+        "chinese": "圣诞节"
+      },
+      {
+        "english": "Easter",
+        "chinese": "复活节"
+      }
+    ],
+    "6": [
+      {
+        "english": "event",
+        "chinese": "事件；活动"
+      },
+      {
+        "english": "Open Day",
+        "chinese": "开放日"
+      },
+      {
+        "english": "Speech Day",
+        "chinese": "毕业典礼；演讲日"
+      },
+      {
+        "english": "Parents' Day",
+        "chinese": "家长日"
+      },
+      {
+        "english": "Sports Day",
+        "chinese": "运动会"
+      },
+      {
+        "english": "the school picnic",
+        "chinese": "学校野餐；学校郊游"
+      },
+      {
+        "english": "the school fair",
+        "chinese": "学校游园会；学校义卖会"
+      },
+      {
+        "english": "the school concert",
+        "chinese": "学校音乐会"
+      },
+      {
+        "english": "the swimming gala",
+        "chinese": "游泳比赛"
+      },
+      {
+        "english": "handbook",
+        "chinese": "手册"
+      },
+      {
+        "english": "wait",
+        "chinese": "等待"
+      },
+      {
+        "english": "trumpet",
+        "chinese": "小号"
+      },
+      {
+        "english": "idea",
+        "chinese": "主意"
+      },
+      {
+        "english": "super",
+        "chinese": "超级（棒）的"
+      }
+    ],
+    "7": [
+      {
+        "english": "date",
+        "chinese": "日期"
+      },
+      {
+        "english": "month",
+        "chinese": "月份"
+      },
+      {
+        "english": "January",
+        "chinese": "一月"
+      },
+      {
+        "english": "February",
+        "chinese": "二月"
+      },
+      {
+        "english": "March",
+        "chinese": "三月"
+      },
+      {
+        "english": "April",
+        "chinese": "四月"
+      },
+      {
+        "english": "May",
+        "chinese": "五月"
+      },
+      {
+        "english": "June",
+        "chinese": "六月"
+      },
+      {
+        "english": "July",
+        "chinese": "七月"
+      },
+      {
+        "english": "August",
+        "chinese": "八月"
+      },
+      {
+        "english": "September",
+        "chinese": "九月"
+      },
+      {
+        "english": "October",
+        "chinese": "十月"
+      },
+      {
+        "english": "November",
+        "chinese": "十一月"
+      },
+      {
+        "english": "December",
+        "chinese": "十二月"
+      }
+    ],
+    "8": [
+      {
+        "english": "when",
+        "chinese": "什么时候"
+      },
+      {
+        "english": "first (1st)",
+        "chinese": "第一（的）"
+      },
+      {
+        "english": "second (2nd)",
+        "chinese": "第二（的）"
+      },
+      {
+        "english": "third (3rd)",
+        "chinese": "第三（的）"
+      },
+      {
+        "english": "fourth (4th)",
+        "chinese": "第四（的）"
+      },
+      {
+        "english": "fifth (5th)",
+        "chinese": "第五（的）"
+      },
+      {
+        "english": "sixth (6th)",
+        "chinese": "第六（的）"
+      },
+      {
+        "english": "seventh (7th)",
+        "chinese": "第七（的）"
+      },
+      {
+        "english": "eighth (8th)",
+        "chinese": "第八（的）"
+      },
+      {
+        "english": "ninth (9th)",
+        "chinese": "第九（的）"
+      },
+      {
+        "english": "tenth (10th)",
+        "chinese": "第十（的）"
+      },
+      {
+        "english": "eleventh (11th)",
+        "chinese": "第十一（的）"
+      },
+      {
+        "english": "twelfth (12th)",
+        "chinese": "第十二（的）"
+      },
+      {
+        "english": "fifteenth (15th)",
+        "chinese": "第十五（的）"
+      }
+    ],
+    "9": [
+      {
+        "english": "place",
+        "chinese": "地方；地点"
+      },
+      {
+        "english": "classroom",
+        "chinese": "教室"
+      },
+      {
+        "english": "art room",
+        "chinese": "美术室"
+      },
+      {
+        "english": "computer room",
+        "chinese": "电脑室"
+      },
+      {
+        "english": "music room",
+        "chinese": "音乐室"
+      },
+      {
+        "english": "library",
+        "chinese": "图书馆"
+      },
+      {
+        "english": "school hall",
+        "chinese": "学校礼堂"
+      },
+      {
+        "english": "lift",
+        "chinese": "电梯（直梯）"
+      },
+      {
+        "english": "toilets",
+        "chinese": "厕所（复数）"
+      },
+      {
+        "english": "visit",
+        "chinese": "参观"
+      },
+      {
+        "english": "boring",
+        "chinese": "无聊的"
+      },
+      {
+        "english": "next to",
+        "chinese": "在……旁边"
+      },
+      {
+        "english": "on the left",
+        "chinese": "在左边"
+      },
+      {
+        "english": "on the right",
+        "chinese": "在右边"
+      }
+    ],
+    "10": [
+      {
+        "english": "ground floor",
+        "chinese": "地面层（G/F)"
+      },
+      {
+        "english": "first floor",
+        "chinese": "一楼（1/F)"
+      },
+      {
+        "english": "second floor",
+        "chinese": "二楼（2/F)"
+      },
+      {
+        "english": "third floor",
+        "chinese": "三楼（3/F)"
+      },
+      {
+        "english": "fourth floor",
+        "chinese": "四楼（4/F)"
+      },
+      {
+        "english": "fifth floor",
+        "chinese": "五楼（5/F)"
+      },
+      {
+        "english": "sixth floor",
+        "chinese": "六楼（6/F)"
+      },
+      {
+        "english": "draw",
+        "chinese": "画画"
+      },
+      {
+        "english": "paint",
+        "chinese": "绘画"
+      },
+      {
+        "english": "storybook",
+        "chinese": "故事书"
+      },
+      {
+        "english": "game",
+        "chinese": "游戏"
+      },
+      {
+        "english": "guess",
+        "chinese": "猜测"
+      },
+      {
+        "english": "can",
+        "chinese": "可以"
+      },
+      {
+        "english": "where",
+        "chinese": "哪里"
+      }
+    ],
+    "11": [
+      {
+        "english": "room",
+        "chinese": "房间"
+      },
+      {
+        "english": "cool",
+        "chinese": "棒，酷"
+      },
+      {
+        "english": "food",
+        "chinese": "食物"
+      },
+      {
+        "english": "moon",
+        "chinese": "月亮"
+      },
+      {
+        "english": "balloon",
+        "chinese": "气球"
+      },
+      {
+        "english": "hoop",
+        "chinese": "呼啦圈"
+      },
+      {
+        "english": "root",
+        "chinese": "根"
+      },
+      {
+        "english": "lie",
+        "chinese": "位于"
+      },
+      {
+        "english": "swimming pool",
+        "chinese": "游泳池"
+      },
+      {
+        "english": "cosy",
+        "chinese": "温暖舒适的"
+      },
+      {
+        "english": "many",
+        "chinese": "很多的"
+      },
+      {
+        "english": "more",
+        "chinese": "更多的"
+      },
+      {
+        "english": "picture",
+        "chinese": "图画，图片"
+      },
+      {
+        "english": "follow",
+        "chinese": "跟着"
+      }
+    ],
+    "12": [
+      {
+        "english": "country park",
+        "chinese": "郊野公园"
+      },
+      {
+        "english": "beach",
+        "chinese": "沙滩"
+      },
+      {
+        "english": "fast food shop",
+        "chinese": "快餐店"
+      },
+      {
+        "english": "restaurant",
+        "chinese": "餐厅；饭店"
+      },
+      {
+        "english": "hotel",
+        "chinese": "酒店；旅馆"
+      },
+      {
+        "english": "shopping centre",
+        "chinese": "购物中心；商场"
+      },
+      {
+        "english": "cinema",
+        "chinese": "电影院"
+      },
+      {
+        "english": "have a picnic",
+        "chinese": "野餐"
+      },
+      {
+        "english": "have a barbecue",
+        "chinese": "烧烤"
+      },
+      {
+        "english": "look at shells",
+        "chinese": "观赏贝壳"
+      },
+      {
+        "english": "build sandcastles",
+        "chinese": "堆沙堡"
+      },
+      {
+        "english": "eat pizza",
+        "chinese": "吃披萨"
+      },
+      {
+        "english": "have a buffet meal",
+        "chinese": "吃自助餐"
+      },
+      {
+        "english": "watch a film",
+        "chinese": "看电影"
+      }
+    ],
+    "13": [
+      {
+        "english": "weekend",
+        "chinese": "周末"
+      },
+      {
+        "english": "hamburger",
+        "chinese": "汉堡"
+      },
+      {
+        "english": "eat dim sum",
+        "chinese": "吃点心"
+      },
+      {
+        "english": "Sunday",
+        "chinese": "星期日"
+      },
+      {
+        "english": "bored",
+        "chinese": "（感到）无聊的"
+      },
+      {
+        "english": "trousers",
+        "chinese": "裤子"
+      },
+      {
+        "english": "idea",
+        "chinese": "主意"
+      },
+      {
+        "english": "different",
+        "chinese": "不同的"
+      },
+      {
+        "english": "rain",
+        "chinese": "下雨"
+      },
+      {
+        "english": "half an hour",
+        "chinese": "半小时"
+      },
+      {
+        "english": "free",
+        "chinese": "免费的；自由的"
+      },
+      {
+        "english": "coupon",
+        "chinese": "优惠券"
+      },
+      {
+        "english": "delivery",
+        "chinese": "外送服务"
+      },
+      {
+        "english": "spend",
+        "chinese": "消费，花费"
+      }
+    ],
+    "14": [
+      {
+        "english": "shopping",
+        "chinese": "购物"
+      },
+      {
+        "english": "fun",
+        "chinese": "乐趣"
+      },
+      {
+        "english": "backpack",
+        "chinese": "背包"
+      },
+      {
+        "english": "handbag",
+        "chinese": "手提包"
+      },
+      {
+        "english": "wallet",
+        "chinese": "皮夹，钱包"
+      },
+      {
+        "english": "purse",
+        "chinese": "（女士) 钱包"
+      },
+      {
+        "english": "watch",
+        "chinese": "手表"
+      },
+      {
+        "english": "water bottle",
+        "chinese": "水壶"
+      },
+      {
+        "english": "lunchbox",
+        "chinese": "午餐盒"
+      },
+      {
+        "english": "photo frame",
+        "chinese": "相框"
+      },
+      {
+        "english": "scene",
+        "chinese": "场景"
+      },
+      {
+        "english": "sale",
+        "chinese": "出售，销售"
+      },
+      {
+        "english": "garage",
+        "chinese": "车库"
+      },
+      {
+        "english": "lots of",
+        "chinese": "许多"
+      }
+    ],
+    "15": [
+      {
+        "english": "how much",
+        "chinese": "多少钱"
+      },
+      {
+        "english": "It's=It is",
+        "chinese": "它是......"
+      },
+      {
+        "english": "They're=They are",
+        "chinese": "它（他/她）们是......"
+      },
+      {
+        "english": "want",
+        "chinese": "想要"
+      },
+      {
+        "english": "sell",
+        "chinese": "卖"
+      },
+      {
+        "english": "Renminbi",
+        "chinese": "人民币（RMB）"
+      },
+      {
+        "english": "dollar",
+        "chinese": "元；美元"
+      },
+      {
+        "english": "forty",
+        "chinese": "四十"
+      },
+      {
+        "english": "fifty",
+        "chinese": "五十"
+      },
+      {
+        "english": "sixty",
+        "chinese": "六十"
+      },
+      {
+        "english": "seventy",
+        "chinese": "七十"
+      },
+      {
+        "english": "eighty",
+        "chinese": "八十"
+      },
+      {
+        "english": "ninety",
+        "chinese": "九十"
+      },
+      {
+        "english": "a / one hundred",
+        "chinese": "一百"
+      }
+    ],
+    "16": [
+      {
+        "english": "fifty-one",
+        "chinese": "五十一"
+      },
+      {
+        "english": "sixty-four",
+        "chinese": "六十四"
+      },
+      {
+        "english": "seventy-three",
+        "chinese": "七十三"
+      },
+      {
+        "english": "eighty-seven",
+        "chinese": "八十七"
+      },
+      {
+        "english": "ninety-five",
+        "chinese": "九十五"
+      },
+      {
+        "english": "photo",
+        "chinese": "照片"
+      },
+      {
+        "english": "phone",
+        "chinese": "手机"
+      },
+      {
+        "english": "elephant",
+        "chinese": "大象"
+      },
+      {
+        "english": "dolphin",
+        "chinese": "海豚"
+      },
+      {
+        "english": "giraffe",
+        "chinese": "长颈鹿"
+      },
+      {
+        "english": "money",
+        "chinese": "钱"
+      },
+      {
+        "english": "outside",
+        "chinese": "在……的外面，在户外"
+      },
+      {
+        "english": "buy",
+        "chinese": "购买"
+      },
+      {
+        "english": "a lot of",
+        "chinese": "许多"
+      }
+    ]
+  },
+  "好学": {
+    "1": [
+      {
+        "english": "weather",
+        "chinese": "天气"
+      },
+      {
+        "english": "hot",
+        "chinese": "炎热的"
+      },
+      {
+        "english": "warm",
+        "chinese": "温暖的"
+      },
+      {
+        "english": "cool",
+        "chinese": "凉爽的"
+      },
+      {
+        "english": "cold",
+        "chinese": "寒冷的"
+      },
+      {
+        "english": "foggy",
+        "chinese": "有雾的"
+      },
+      {
+        "english": "rainy",
+        "chinese": "多雨的"
+      },
+      {
+        "english": "sunny",
+        "chinese": "晴朗的"
+      },
+      {
+        "english": "windy",
+        "chinese": "有风的"
+      },
+      {
+        "english": "dry",
+        "chinese": "干燥的"
+      },
+      {
+        "english": "spring",
+        "chinese": "春天"
+      },
+      {
+        "english": "summer",
+        "chinese": "夏天"
+      },
+      {
+        "english": "autumn",
+        "chinese": "秋天"
+      },
+      {
+        "english": "winter",
+        "chinese": "冬天"
+      }
+    ],
+    "2": [
+      {
+        "english": "season",
+        "chinese": "季节"
+      },
+      {
+        "english": "plant flowers",
+        "chinese": "种花"
+      },
+      {
+        "english": "go to the park",
+        "chinese": "去公园"
+      },
+      {
+        "english": "go swimming",
+        "chinese": "游泳"
+      },
+      {
+        "english": "eat ice cream",
+        "chinese": "吃冰淇淋"
+      },
+      {
+        "english": "fly kites",
+        "chinese": "放风筝"
+      },
+      {
+        "english": "go hiking",
+        "chinese": "去徒步"
+      },
+      {
+        "english": "eat hotpot",
+        "chinese": "吃火锅"
+      },
+      {
+        "english": "wear a scarf",
+        "chinese": "戴围巾"
+      },
+      {
+        "english": "feather",
+        "chinese": "羽毛"
+      },
+      {
+        "english": "thunder",
+        "chinese": "雷声"
+      },
+      {
+        "english": "lightning",
+        "chinese": "闪电"
+      },
+      {
+        "english": "a sunny smile",
+        "chinese": "阳光般的微笑"
+      },
+      {
+        "english": "friendly",
+        "chinese": "友善的"
+      }
+    ],
+    "3": [
+      {
+        "english": "festival",
+        "chinese": "节日"
+      },
+      {
+        "english": "Chinese New Year",
+        "chinese": "农历新年"
+      },
+      {
+        "english": "get",
+        "chinese": "收到"
+      },
+      {
+        "english": "lucky money",
+        "chinese": "压岁钱"
+      },
+      {
+        "english": "watch",
+        "chinese": "看"
+      },
+      {
+        "english": "fireworks",
+        "chinese": "烟花（复数）"
+      },
+      {
+        "english": "Mid-Autumn Festival",
+        "chinese": "中秋节"
+      },
+      {
+        "english": "eat",
+        "chinese": "吃"
+      },
+      {
+        "english": "moon cakes",
+        "chinese": "月饼（复数）"
+      },
+      {
+        "english": "play with",
+        "chinese": "和……玩/玩某物"
+      },
+      {
+        "english": "lanterns",
+        "chinese": "灯笼（复数）"
+      },
+      {
+        "english": "Dragon Boat Festival",
+        "chinese": "端午节，龙舟节"
+      },
+      {
+        "english": "races",
+        "chinese": "比赛（复数）"
+      },
+      {
+        "english": "rice dumplings",
+        "chinese": "粽子（复数）"
+      }
+    ],
+    "4": [
+      {
+        "english": "Christmas",
+        "chinese": "圣诞节"
+      },
+      {
+        "english": "give presents",
+        "chinese": "送礼物"
+      },
+      {
+        "english": "send cards",
+        "chinese": "寄贺卡"
+      },
+      {
+        "english": "Easter",
+        "chinese": "复活节"
+      },
+      {
+        "english": "chocolate",
+        "chinese": "巧克力"
+      },
+      {
+        "english": "website",
+        "chinese": "网站"
+      },
+      {
+        "english": "Macau",
+        "chinese": "澳门"
+      },
+      {
+        "english": "Hong Kong",
+        "chinese": "香港"
+      },
+      {
+        "english": "everywhere",
+        "chinese": "到处"
+      },
+      {
+        "english": "ice cream",
+        "chinese": "冰淇淋"
+      },
+      {
+        "english": "salty",
+        "chinese": "咸的"
+      },
+      {
+        "english": "inside",
+        "chinese": "里面"
+      },
+      {
+        "english": "pomelo",
+        "chinese": "柚子"
+      },
+      {
+        "english": "photo",
+        "chinese": "照片"
+      }
+    ],
+    "5": [
+      {
+        "english": "have barbecues",
+        "chinese": "烧烤"
+      },
+      {
+        "english": "colourful",
+        "chinese": "色彩缤纷的"
+      },
+      {
+        "english": "smell",
+        "chinese": "闻到"
+      },
+      {
+        "english": "always",
+        "chinese": "总是"
+      },
+      {
+        "english": "holiday",
+        "chinese": "假日；度假期"
+      },
+      {
+        "english": "which",
+        "chinese": "哪一个"
+      },
+      {
+        "english": "best",
+        "chinese": "最"
+      },
+      {
+        "english": "why",
+        "chinese": "为什么"
+      },
+      {
+        "english": "because",
+        "chinese": "因为"
+      },
+      {
+        "english": "Chinese New Year",
+        "chinese": "春节"
+      },
+      {
+        "english": "Mid-Autumn Festival",
+        "chinese": "中秋节"
+      },
+      {
+        "english": "Dragon Boat Festival",
+        "chinese": "端午节，龙舟节"
+      },
+      {
+        "english": "Christmas",
+        "chinese": "圣诞节"
+      },
+      {
+        "english": "Easter",
+        "chinese": "复活节"
+      }
+    ],
+    "6": [
+      {
+        "english": "event",
+        "chinese": "事件；活动"
+      },
+      {
+        "english": "Open Day",
+        "chinese": "开放日"
+      },
+      {
+        "english": "Speech Day",
+        "chinese": "毕业典礼；演讲日"
+      },
+      {
+        "english": "Parents' Day",
+        "chinese": "家长日"
+      },
+      {
+        "english": "Sports Day",
+        "chinese": "运动会"
+      },
+      {
+        "english": "the school picnic",
+        "chinese": "学校野餐；学校郊游"
+      },
+      {
+        "english": "the school fair",
+        "chinese": "学校游园会；学校义卖会"
+      },
+      {
+        "english": "the school concert",
+        "chinese": "学校音乐会"
+      },
+      {
+        "english": "the swimming gala",
+        "chinese": "游泳比赛"
+      },
+      {
+        "english": "handbook",
+        "chinese": "手册"
+      },
+      {
+        "english": "wait",
+        "chinese": "等待"
+      },
+      {
+        "english": "trumpet",
+        "chinese": "小号"
+      },
+      {
+        "english": "idea",
+        "chinese": "主意"
+      },
+      {
+        "english": "super",
+        "chinese": "超级（棒）的"
+      }
+    ],
+    "7": [
+      {
+        "english": "date",
+        "chinese": "日期"
+      },
+      {
+        "english": "month",
+        "chinese": "月份"
+      },
+      {
+        "english": "January",
+        "chinese": "一月"
+      },
+      {
+        "english": "February",
+        "chinese": "二月"
+      },
+      {
+        "english": "March",
+        "chinese": "三月"
+      },
+      {
+        "english": "April",
+        "chinese": "四月"
+      },
+      {
+        "english": "May",
+        "chinese": "五月"
+      },
+      {
+        "english": "June",
+        "chinese": "六月"
+      },
+      {
+        "english": "July",
+        "chinese": "七月"
+      },
+      {
+        "english": "August",
+        "chinese": "八月"
+      },
+      {
+        "english": "September",
+        "chinese": "九月"
+      },
+      {
+        "english": "October",
+        "chinese": "十月"
+      },
+      {
+        "english": "November",
+        "chinese": "十一月"
+      },
+      {
+        "english": "December",
+        "chinese": "十二月"
+      }
+    ],
+    "8": [
+      {
+        "english": "when",
+        "chinese": "什么时候"
+      },
+      {
+        "english": "first (1st)",
+        "chinese": "第一（的）"
+      },
+      {
+        "english": "second (2nd)",
+        "chinese": "第二（的）"
+      },
+      {
+        "english": "third (3rd)",
+        "chinese": "第三（的）"
+      },
+      {
+        "english": "fourth (4th)",
+        "chinese": "第四（的）"
+      },
+      {
+        "english": "fifth (5th)",
+        "chinese": "第五（的）"
+      },
+      {
+        "english": "sixth (6th)",
+        "chinese": "第六（的）"
+      },
+      {
+        "english": "seventh (7th)",
+        "chinese": "第七（的）"
+      },
+      {
+        "english": "eighth (8th)",
+        "chinese": "第八（的）"
+      },
+      {
+        "english": "ninth (9th)",
+        "chinese": "第九（的）"
+      },
+      {
+        "english": "tenth (10th)",
+        "chinese": "第十（的）"
+      },
+      {
+        "english": "eleventh (11th)",
+        "chinese": "第十一（的）"
+      },
+      {
+        "english": "twelfth (12th)",
+        "chinese": "第十二（的）"
+      },
+      {
+        "english": "fifteenth (15th)",
+        "chinese": "第十五（的）"
+      }
+    ],
+    "9": [
+      {
+        "english": "place",
+        "chinese": "地方；地点"
+      },
+      {
+        "english": "classroom",
+        "chinese": "教室"
+      },
+      {
+        "english": "art room",
+        "chinese": "美术室"
+      },
+      {
+        "english": "computer room",
+        "chinese": "电脑室"
+      },
+      {
+        "english": "music room",
+        "chinese": "音乐室"
+      },
+      {
+        "english": "library",
+        "chinese": "图书馆"
+      },
+      {
+        "english": "school hall",
+        "chinese": "学校礼堂"
+      },
+      {
+        "english": "lift",
+        "chinese": "电梯（直梯）"
+      },
+      {
+        "english": "toilets",
+        "chinese": "厕所（复数）"
+      },
+      {
+        "english": "visit",
+        "chinese": "参观"
+      },
+      {
+        "english": "boring",
+        "chinese": "无聊的"
+      },
+      {
+        "english": "next to",
+        "chinese": "在……旁边"
+      },
+      {
+        "english": "on the left",
+        "chinese": "在左边"
+      },
+      {
+        "english": "on the right",
+        "chinese": "在右边"
+      }
+    ],
+    "10": [
+      {
+        "english": "ground floor",
+        "chinese": "地面层（G/F)"
+      },
+      {
+        "english": "first floor",
+        "chinese": "一楼（1/F)"
+      },
+      {
+        "english": "second floor",
+        "chinese": "二楼（2/F)"
+      },
+      {
+        "english": "third floor",
+        "chinese": "三楼（3/F)"
+      },
+      {
+        "english": "fourth floor",
+        "chinese": "四楼（4/F)"
+      },
+      {
+        "english": "fifth floor",
+        "chinese": "五楼（5/F)"
+      },
+      {
+        "english": "sixth floor",
+        "chinese": "六楼（6/F)"
+      },
+      {
+        "english": "draw",
+        "chinese": "画画"
+      },
+      {
+        "english": "paint",
+        "chinese": "绘画"
+      },
+      {
+        "english": "storybook",
+        "chinese": "故事书"
+      },
+      {
+        "english": "game",
+        "chinese": "游戏"
+      },
+      {
+        "english": "guess",
+        "chinese": "猜测"
+      },
+      {
+        "english": "can",
+        "chinese": "可以"
+      },
+      {
+        "english": "where",
+        "chinese": "哪里"
+      }
+    ],
+    "11": [
+      {
+        "english": "room",
+        "chinese": "房间"
+      },
+      {
+        "english": "cool",
+        "chinese": "棒，酷"
+      },
+      {
+        "english": "food",
+        "chinese": "食物"
+      },
+      {
+        "english": "moon",
+        "chinese": "月亮"
+      },
+      {
+        "english": "balloon",
+        "chinese": "气球"
+      },
+      {
+        "english": "hoop",
+        "chinese": "呼啦圈"
+      },
+      {
+        "english": "root",
+        "chinese": "根"
+      },
+      {
+        "english": "lie",
+        "chinese": "位于"
+      },
+      {
+        "english": "swimming pool",
+        "chinese": "游泳池"
+      },
+      {
+        "english": "cosy",
+        "chinese": "温暖舒适的"
+      },
+      {
+        "english": "many",
+        "chinese": "很多的"
+      },
+      {
+        "english": "more",
+        "chinese": "更多的"
+      },
+      {
+        "english": "picture",
+        "chinese": "图画，图片"
+      },
+      {
+        "english": "follow",
+        "chinese": "跟着"
+      }
+    ],
+    "12": [
+      {
+        "english": "country park",
+        "chinese": "郊野公园"
+      },
+      {
+        "english": "beach",
+        "chinese": "沙滩"
+      },
+      {
+        "english": "fast food shop",
+        "chinese": "快餐店"
+      },
+      {
+        "english": "restaurant",
+        "chinese": "餐厅；饭店"
+      },
+      {
+        "english": "hotel",
+        "chinese": "酒店；旅馆"
+      },
+      {
+        "english": "shopping centre",
+        "chinese": "购物中心；商场"
+      },
+      {
+        "english": "cinema",
+        "chinese": "电影院"
+      },
+      {
+        "english": "have a picnic",
+        "chinese": "野餐"
+      },
+      {
+        "english": "have a barbecue",
+        "chinese": "烧烤"
+      },
+      {
+        "english": "look at shells",
+        "chinese": "观赏贝壳"
+      },
+      {
+        "english": "build sandcastles",
+        "chinese": "堆沙堡"
+      },
+      {
+        "english": "eat pizza",
+        "chinese": "吃披萨"
+      },
+      {
+        "english": "have a buffet meal",
+        "chinese": "吃自助餐"
+      },
+      {
+        "english": "watch a film",
+        "chinese": "看电影"
+      }
+    ],
+    "13": [
+      {
+        "english": "weekend",
+        "chinese": "周末"
+      },
+      {
+        "english": "hamburger",
+        "chinese": "汉堡"
+      },
+      {
+        "english": "eat dim sum",
+        "chinese": "吃点心"
+      },
+      {
+        "english": "Sunday",
+        "chinese": "星期日"
+      },
+      {
+        "english": "bored",
+        "chinese": "（感到）无聊的"
+      },
+      {
+        "english": "trousers",
+        "chinese": "裤子"
+      },
+      {
+        "english": "idea",
+        "chinese": "主意"
+      },
+      {
+        "english": "different",
+        "chinese": "不同的"
+      },
+      {
+        "english": "rain",
+        "chinese": "下雨"
+      },
+      {
+        "english": "half an hour",
+        "chinese": "半小时"
+      },
+      {
+        "english": "free",
+        "chinese": "免费的；自由的"
+      },
+      {
+        "english": "coupon",
+        "chinese": "优惠券"
+      },
+      {
+        "english": "delivery",
+        "chinese": "外送服务"
+      },
+      {
+        "english": "spend",
+        "chinese": "消费，花费"
+      }
+    ],
+    "14": [
+      {
+        "english": "shopping",
+        "chinese": "购物"
+      },
+      {
+        "english": "fun",
+        "chinese": "乐趣"
+      },
+      {
+        "english": "backpack",
+        "chinese": "背包"
+      },
+      {
+        "english": "handbag",
+        "chinese": "手提包"
+      },
+      {
+        "english": "wallet",
+        "chinese": "皮夹，钱包"
+      },
+      {
+        "english": "purse",
+        "chinese": "（女士) 钱包"
+      },
+      {
+        "english": "watch",
+        "chinese": "手表"
+      },
+      {
+        "english": "water bottle",
+        "chinese": "水壶"
+      },
+      {
+        "english": "lunchbox",
+        "chinese": "午餐盒"
+      },
+      {
+        "english": "photo frame",
+        "chinese": "相框"
+      },
+      {
+        "english": "scene",
+        "chinese": "场景"
+      },
+      {
+        "english": "sale",
+        "chinese": "出售，销售"
+      },
+      {
+        "english": "garage",
+        "chinese": "车库"
+      },
+      {
+        "english": "lots of",
+        "chinese": "许多"
+      }
+    ],
+    "15": [
+      {
+        "english": "how much",
+        "chinese": "多少钱"
+      },
+      {
+        "english": "It's=It is",
+        "chinese": "它是......"
+      },
+      {
+        "english": "They're=They are",
+        "chinese": "它（他/她）们是......"
+      },
+      {
+        "english": "want",
+        "chinese": "想要"
+      },
+      {
+        "english": "sell",
+        "chinese": "卖"
+      },
+      {
+        "english": "Renminbi",
+        "chinese": "人民币（RMB）"
+      },
+      {
+        "english": "dollar",
+        "chinese": "元；美元"
+      },
+      {
+        "english": "forty",
+        "chinese": "四十"
+      },
+      {
+        "english": "fifty",
+        "chinese": "五十"
+      },
+      {
+        "english": "sixty",
+        "chinese": "六十"
+      },
+      {
+        "english": "seventy",
+        "chinese": "七十"
+      },
+      {
+        "english": "eighty",
+        "chinese": "八十"
+      },
+      {
+        "english": "ninety",
+        "chinese": "九十"
+      },
+      {
+        "english": "a / one hundred",
+        "chinese": "一百"
+      }
+    ],
+    "16": [
+      {
+        "english": "fifty-one",
+        "chinese": "五十一"
+      },
+      {
+        "english": "sixty-four",
+        "chinese": "六十四"
+      },
+      {
+        "english": "seventy-three",
+        "chinese": "七十三"
+      },
+      {
+        "english": "eighty-seven",
+        "chinese": "八十七"
+      },
+      {
+        "english": "ninety-five",
+        "chinese": "九十五"
+      },
+      {
+        "english": "photo",
+        "chinese": "照片"
+      },
+      {
+        "english": "phone",
+        "chinese": "手机"
+      },
+      {
+        "english": "elephant",
+        "chinese": "大象"
+      },
+      {
+        "english": "dolphin",
+        "chinese": "海豚"
+      },
+      {
+        "english": "giraffe",
+        "chinese": "长颈鹿"
+      },
+      {
+        "english": "money",
+        "chinese": "钱"
+      },
+      {
+        "english": "outside",
+        "chinese": "在……的外面，在户外"
+      },
+      {
+        "english": "buy",
+        "chinese": "购买"
+      },
+      {
+        "english": "a lot of",
+        "chinese": "许多"
+      }
+    ]
+  }
+}

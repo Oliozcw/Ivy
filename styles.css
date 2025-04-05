@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-image: linear-gradient(45deg, #FFE5E5 25%, #FFF5F5 25%, #FFF5F5 50%, #FFE5E5 50%, #FFE5E5 75%, #FFF5F5 75%, #FFF5F5 100%);
+    background-size: 40px 40px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.screen {
+    display: none;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    min-height: 80vh;
+}
+
+.screen.active {
+    display: block;
+}
+
+.title {
+    text-align: center;
+    color: #FF6B6B;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 0 #FFE5E5;
+}
+
+/* 难度选择页面 */
+.difficulty-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.difficulty-card {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.difficulty-card:hover {
+    transform: translateY(-10px);
+}
+
+.difficulty-card[data-difficulty="睿学"] {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+}
+
+.difficulty-card[data-difficulty="精学"] {
+    background: linear-gradient(135deg, #2196F3, #0D47A1);
+}
+
+.difficulty-card[data-difficulty="好学"] {
+    background: linear-gradient(135deg, #FF9800, #E65100);
+}
+
+/* 课程选择页面 */
+.lesson-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.lesson-btn {
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(135deg, #FFB6C1, #FF8DA1);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 182, 193, 0.3);
+}
+
+.lesson-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 182, 193, 0.4);
+}
+
+/* 游戏页面 */
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.score {
+    font-size: 20px;
+    color: #FF6B6B;
+    font-weight: bold;
+}
+
+.back-button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg, #FF6B6B, #FF4949);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) !important;
+    gap: 12px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.game-board.six-columns {
+    grid-template-columns: repeat(6, 1fr) !important;
+}
+
+.card {
+    aspect-ratio: 1.5/1;
+    background: white;
+    border-radius: 12px;
+    border: 2px solid #FFB6C1;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.2;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    word-break: break-word;
+    min-height: 40px;
+    max-height: 70px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-color: #FF8DA1;
+}
+
+.card.selected {
+    background: #FFE5E5;
+    border-color: #FF8DA1;
+}
+
+.card.matched {
+    animation: disappear 0.5s ease forwards;
+    pointer-events: none;
+}
+
+@keyframes disappear {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.complete-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 90%;
+    max-width: 400px;
+}
+
+.complete-message h2 {
+    color: #FF6B6B;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.complete-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.complete-buttons button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #FF6B6B, #FF4949);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.complete-buttons button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+/* 响应式布局 */
+@media (max-width: 1024px) {
+    .game-board {
+        grid-template-columns: repeat(5, 1fr) !important;
+    }
+    
+    .card {
+        font-size: 15px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    .difficulty-card {
+        width: 180px;
+        height: 220px;
+        font-size: 24px;
+    }
+
+    .lesson-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .game-board {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 8px;
+    }
+    
+    .card {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .difficulty-card {
+        width: 140px;
+        height: 180px;
+        font-size: 20px;
+    }
+
+    .lesson-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .game-board {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+        padding: 0;
+    }
+    
+    .card {
+        font-size: 12px;
+        padding: 4px;
+        min-height: 30px;
+        border-width: 1.5px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card[data-long-text="true"] {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .game-board {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4px;
+    }
+    
+    .card {
+        font-size: 10px;
+        padding: 3px;
+        min-height: 25px;
+    }
+} 

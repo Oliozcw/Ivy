@@ -2,167 +2,60 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>中英文单词消消乐</title>
-    <style>
-        :root {
-            --primary: #2196F3;
-            --secondary: #64B5F6;
-            --accent: #1976D2;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background: #f0f8ff;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .game-title {
-            color: var(--accent);
-            margin: 20px 0;
-        }
-
-        .game-container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-            max-width: 800px;
-            margin: 20px auto;
-        }
-
-        .card {
-            background: var(--primary);
-            color: white;
-            padding: 25px;
-            border-radius: 8px;
-            cursor: pointer;
-            text-align: center;
-            transition: all 0.3s ease;
-            user-select: none;
-        }
-
-        .card.chinese {
-            background: var(--secondary);
-        }
-
-        .card.selected {
-            transform: scale(1.05);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            background: var(--accent);
-        }
-
-        .card.removed {
-            visibility: hidden;
-            opacity: 0;
-            transform: scale(0);
-        }
-
-        .message {
-            color: var(--accent);
-            font-size: 1.5em;
-            margin-top: 20px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单词消消乐</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 class="game-title">单词消消乐</h1>
-    <div class="game-container" id="gameContainer"></div>
-    <div class="message" id="message"></div>
+    <audio id="successSound" src="data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA/+M4wAAAAAAAAAAAAEluZm8AAAAPAAAABAAABVgANTU1NTU1Q0NDQ0NDUFBQUFBQXl5eXl5ea2tra2tra3l5eXl5eYaGhoaGhpOTk5OTk6CgoKCgoK2tra2trcHBwcHBwc7Ozs7Oztvb29vb2+jo6Ojo6PT09PT09P////////8AAAAATGF2YzU4LjEzAAAAAAAAAAAAAAAAJAAAAAAAAAAABViUXpqiAAAAAAAAAAAAAAAAAAAA/+MYxAAAAANIAAAAAExBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV/+MYxDsAAANIAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV/+MYxHYAAANIAAAAAFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV" preload="auto"></audio>
+    <div class="container">
+        <!-- 难度选择页面 -->
+        <div id="difficultyScreen" class="screen active">
+            <h1 class="title">单词消消乐</h1>
+            <div class="difficulty-cards">
+                <button class="difficulty-card" data-difficulty="睿学">睿学</button>
+                <button class="difficulty-card" data-difficulty="精学">精学</button>
+                <button class="difficulty-card" data-difficulty="好学">好学</button>
+            </div>
+        </div>
 
+        <!-- 课程选择页面 -->
+        <div id="lessonScreen" class="screen">
+            <h1 class="title">选择课程</h1>
+            <div class="lesson-grid" id="lessonButtons"></div>
+        </div>
+
+        <!-- 游戏页面 -->
+        <div id="gameScreen" class="screen">
+            <div class="game-header">
+                <div class="score" id="score"></div>
+                <button class="back-button" id="backToLessons">重新选择课程</button>
+            </div>
+            <div id="gameBoard" class="game-board"></div>
+            <div id="completeMessage" class="complete-message">
+                <h2>恭喜完成！</h2>
+                <div class="complete-buttons">
+                    <button id="restartButton">重玩本关</button>
+                    <button id="chooseLessonButton">选择其他课程</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="router.js"></script>
+    <script src="game.js"></script>
     <script>
-        // 可修改的单词列表
-        const wordList = [
-            {en:"Sports Day",zh:"运动会"},
-            {en:"Open Day",zh:"开放日"},
-            {en:"Parents' Day",zh:"家长日"},
-            {en:"Test Week",zh:"测试周"},
-            {en:"Exam Week",zh:"考试周"},
-            {en:"the school picnic",zh:"学校野餐，学校郊游"},
-            {en:"English Camp",zh:"英语营"},
-            {en:"school event",zh:"学校活动"},
-            {en:"month",zh:"月份"},
-            {en:"favourite",zh:"最喜欢的"},
-            {en:"Book Week",zh:"阅读周"},
-            {en:"because",zh:"因为"},
-            {en:"amazing",zh:"令人惊异的"},
-            {en:"dress up",zh:"装扮"},
-	{en:"author",zh:"作者"},
-{en:"pupil",zh:"小学生"}
-        ];
-
-        let selectedCards = [];
-        let gameActive = true;
-
-        function createGame() {
-            const container = document.getElementById('gameContainer');
-            container.innerHTML = '';
+        // 确保DOM完全加载后再初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            // 全局变量，保证router和game可以互相访问
+            window.router = new Router();
+            window.game = new WordGame(window.router);
             
-            // 创建游戏卡片
-            const allWords = wordList.flatMap(pair => [
-                { text: pair.en, translation: pair.zh, type: 'en' },
-                { text: pair.zh, translation: pair.en, type: 'zh' }
-            ]);
-            
-            // 洗牌
-            allWords.sort(() => Math.random() - 0.5);
-
-            allWords.forEach(word => {
-                const card = document.createElement('div');
-                card.className = `card ${word.type === 'zh' ? 'chinese' : ''}`;
-                card.textContent = word.text;
-                card.dataset.translation = word.translation;
-                card.addEventListener('click', () => handleCardClick(card));
-                container.appendChild(card);
-            });
-        }
-
-        function handleCardClick(card) {
-            if (!gameActive || card.classList.contains('selected') || card.classList.contains('removed')) return;
-
-            card.classList.add('selected');
-            selectedCards.push(card);
-
-            if (selectedCards.length === 2) {
-                checkMatch();
+            // 确保数据加载完成后再处理路由
+            if (window.location.hash) {
+                window.router.handleRoute();
             }
-        }
-
-        function checkMatch() {
-            gameActive = false;
-            const [card1, card2] = selectedCards;
-            
-            if (card1.dataset.translation === card2.textContent || 
-                card2.dataset.translation === card1.textContent) {
-                setTimeout(() => {
-                    card1.classList.add('removed');
-                    card2.classList.add('removed');
-                    checkWin();
-                }, 500);
-            } else {
-                setTimeout(() => {
-                    card1.classList.remove('selected');
-                    card2.classList.remove('selected');
-                }, 800);
-            }
-
-            setTimeout(() => {
-                selectedCards = [];
-                gameActive = true;
-            }, 800);
-        }
-
-        function checkWin() {
-            const remaining = document.querySelectorAll('.card:not(.removed)');
-            if (remaining.length === 0) {
-                document.getElementById('message').textContent = '🎉 恭喜！全部消除成功！';
-            }
-        }
-
-        // 初始化游戏
-        createGame();
+        });
     </script>
 </body>
-</html>
+</html> 
