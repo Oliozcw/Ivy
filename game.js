@@ -54,8 +54,13 @@ class WordGame {
         this.totalPairs = 0;
         this.isProcessingMatch = false;
         
+        // 使用HTML中的预定义音频元素   
         this.successSound = document.getElementById('successSound');
         this.completeSound = document.getElementById('completeSound');
+        
+        if (!this.completeSound) {
+            this.completeSound = new Audio('media/this is great.mp3');
+        }
     }
 
     initializeEventListeners() {
@@ -220,77 +225,15 @@ class WordGame {
             this.gameBoard.style.gridTemplateColumns = "repeat(6, 1fr)";
         }
         
-        // 创建一个临时元素用于测量文本宽度
-        const measurer = document.createElement('div');
-        measurer.className = 'card';
-        measurer.style.position = 'absolute';
-        measurer.style.visibility = 'hidden';
-        measurer.style.whiteSpace = 'nowrap'; // 不换行以获取完整宽度
-        document.body.appendChild(measurer);
-        
-        // 获取卡片宽度 (创建一个临时卡片来测量)
-        const tempCard = document.createElement('div');
-        tempCard.className = 'card';
-        tempCard.style.visibility = 'hidden';
-        this.gameBoard.appendChild(tempCard);
-        
-        // 等待DOM更新以获取卡片宽度
-        setTimeout(() => {
-            const cardWidth = tempCard.offsetWidth - 16; // 减去内边距
-            this.gameBoard.removeChild(tempCard);
+        // 简单创建卡片，使用统一的CSS字体大小
+        this.cards.forEach((card, index) => {
+            const cardElement = document.createElement('div');
+            cardElement.className = 'card';
+            cardElement.textContent = card.content;
             
-            // 创建实际卡片并直接设置合适的字体
-            this.cards.forEach((card, index) => {
-                const cardElement = document.createElement('div');
-                cardElement.className = 'card';
-                cardElement.style.visibility = 'hidden'; // 先隐藏，避免闪烁
-                cardElement.textContent = card.content;
-                
-                // 直接设置字体大小（基于卡片宽度和文本测量）
-                this.setAppropriateTextSize(cardElement, card.content, cardWidth, measurer);
-                
-                cardElement.addEventListener('click', () => this.handleCardClick(index));
-                this.gameBoard.appendChild(cardElement);
-            });
-            
-            // 移除测量元素
-            document.body.removeChild(measurer);
-            
-            // 显示所有卡片 (设置好字体后再显示)
-            setTimeout(() => {
-                const allCards = this.gameBoard.querySelectorAll('.card');
-                allCards.forEach(card => {
-                    card.style.visibility = 'visible';
-                });
-            }, 50);
-        }, 10);
-    }
-
-    // 基于实际宽度设置合适的字体大小
-    setAppropriateTextSize(cardElement, text, cardWidth, measurer) {
-        const isPc = window.innerWidth > 768;
-        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
-                    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-        
-        // 默认字体大小
-        let fontSize = isPc ? 20 : (isIOS ? 18 : 16);
-        
-        // 测量文本宽度
-        measurer.style.fontSize = `${fontSize}px`;
-        measurer.textContent = text;
-        let textWidth = measurer.offsetWidth;
-        
-        // 文本宽度比例 (文本宽度与卡片宽度的比例)
-        const widthRatio = textWidth / cardWidth;
-        
-        // 如果文本太长 (超过卡片宽度的80%)
-        if (widthRatio > 0.8) {
-            // 根据比例计算合适的字体大小
-            fontSize = Math.max(isPc ? 18 : 14, Math.floor(fontSize / widthRatio * 0.8));
-        }
-        
-        // 设置计算后的字体大小
-        cardElement.style.fontSize = `${fontSize}px`;
+            cardElement.addEventListener('click', () => this.handleCardClick(index));
+            this.gameBoard.appendChild(cardElement);
+        });
     }
 
     handleCardClick(index) {
@@ -320,12 +263,6 @@ class WordGame {
         if (first.card.pair === second.card.content) {
             this.matchedPairs++;
             
-            try {
-                await this.playAudio(this.successSound);
-            } catch (error) {
-                console.error('播放成功音效失败:', error);
-            }
-            
             first.element.classList.add('matched');
             second.element.classList.add('matched');
             
@@ -344,47 +281,58 @@ class WordGame {
     }
 
     async gameComplete() {
-        console.log("游戏完成，播放鼓励音效");
+        console.log("游戏完成，播放音效");
         
         try {
-            // 使用新的播放方法
-            await this.playAudio(this.completeSound);
+            // 确保音频元素存在
+            if (this.completeSound) {
+                this.completeSound.volume = 1.0;
+                this.completeSound.currentTime = 0;
+                
+                // 播放"this is great"音效
+                await this.completeSound.play();
+                console.log("游戏完成音效播放成功!");
+            }
         } catch (error) {
-            console.error('播放完成音效失败:', error);
+            console.error('无法播放完成音效:', error);
         }
         
         // 显示完成消息
         this.completeMessage.style.display = 'block';
     }
 
-    playAudio(audioElement) {
+    playSound(sound) {
         return new Promise((resolve) => {
-            // 设置音量
-            audioElement.volume = 1.0;
-            
-            // 在用户交互后播放
-            const playAttempt = () => {
-                audioElement.currentTime = 0;
-                
-                const playPromise = audioElement.play();
-                if (playPromise !== undefined) {
-                    playPromise
-                        .then(() => {
-                            console.log('音频播放成功');
-                            resolve();
-                        })
-                        .catch(error => {
-                            console.error('音频播放失败:', error);
-                            resolve(); // 继续即使失败
-                        });
-                } else {
-                    // 旧浏览器不返回Promise
-                    resolve();
-                }
+            // 确保音效准备好
+            sound.oncanplaythrough = () => {
+                sound.currentTime = 0;
+                sound.play()
+                    .then(resolve)
+                    .catch((error) => {
+                        console.error('播放音效失败:', error);
+                        resolve(); // 即使失败也继续
+                    });
             };
             
-            // 尝试播放
-            playAttempt();
+            // 如果已经可以播放，则直接播放
+            if (sound.readyState >= 3) {
+                sound.currentTime = 0;
+                sound.play()
+                    .then(resolve)
+                    .catch((error) => {
+                        console.error('播放音效失败:', error);
+                        resolve();
+                    });
+            }
+            
+            // 错误处理
+            sound.onerror = () => {
+                console.error('音效加载错误:', sound.error);
+                resolve();
+            };
+            
+            // 5秒后超时
+            setTimeout(resolve, 5000);
         });
     }
 

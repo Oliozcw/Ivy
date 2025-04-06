@@ -162,26 +162,25 @@ body {
     min-height: 300px; /* 给定最小高度防止布局移动 */
 }
 
-/* 卡片基础样式 */
+/* 简化后的卡片样式 */
 .card {
-    aspect-ratio: 3/2; /* 调整宽高比例更合理 */
+    aspect-ratio: 3/2;
     background: white;
-    border-radius: 8px; /* 减小圆角 */
+    border-radius: 8px;
     border: 2px solid #FFB6C1;
-    padding: 5px; /* 减小内边距 */
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-weight: 500; /* 增加字重，增强苹果设备上的可见性 */
+    font-size: 16px; /* 与"重新选择课程"按钮一致的字体大小 */
+    font-weight: normal;
     line-height: 1.2;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 减小阴影 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     word-break: break-word;
-    min-height: 40px;
-    overflow: hidden; /* 确保文本不溢出 */
-    position: relative; /* 为可能的绝对定位元素提供参考 */
+    overflow: hidden;
 }
 
 .card:hover {
@@ -281,16 +280,15 @@ body {
     }
 
     .game-board {
-        grid-template-columns: repeat(4, 1fr) !important; /* 强制移动端4列 */
+        grid-template-columns: repeat(4, 1fr) !important;
         gap: 6px;
         padding: 3px;
     }
     
     .card {
-        border-width: 1.5px; /* 更细的边框 */
-        padding: 3px; /* 极小内边距 */
+        border-width: 1.5px;
+        padding: 3px;
         border-radius: 6px;
-        min-height: 30px;
     }
 }
 
