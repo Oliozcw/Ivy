@@ -185,7 +185,7 @@ class WordGame {
                     if (isLongText) {
                         card.style.fontSize = '16px'; // iOS长文本
                     } else {
-                        card.style.fontSize = '18px'; // iOS普通文本
+                        card.style.fontSize = '14px'; // iOS普通文本
                     }
                 } else {
                     // 安卓设备
