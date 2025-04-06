@@ -8,7 +8,14 @@ class WordGame {
         // 监听窗口大小变化，调整列数
         window.addEventListener('resize', () => {
             if (this.gameScreen.classList.contains('active')) {
-                this.adjustGameBoard();
+                // 重新设置列数
+                if (window.innerWidth <= 768) {
+                    this.gameBoard.style.gridTemplateColumns = "repeat(4, 1fr)";
+                } else {
+                    this.gameBoard.style.gridTemplateColumns = "repeat(6, 1fr)";
+                }
+                
+                this.updateFontSizes();
             }
         });
 
@@ -143,19 +150,53 @@ class WordGame {
     }
 
     adjustGameBoard() {
-        let columns;
+        // 不再动态计算列数，使用CSS中固定的列数设置
         
-        // 强制设置为6列（PC端）
-        if (window.innerWidth > 1024) {
-            columns = 6; // PC端改为6列
-        } else if (window.innerWidth > 768) {
-            columns = 5; // 平板显示5列 
-        } else {
-            columns = 4; // 手机显示4列
-        }
+        // 添加窗口大小监听
+        window.addEventListener('resize', () => {
+            this.updateFontSizes();
+        });
         
-        console.log(`屏幕宽度: ${window.innerWidth}, 设置列数: ${columns}`);
-        this.gameBoard.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+        this.updateFontSizes();
+    }
+
+    updateFontSizes() {
+        const cards = document.querySelectorAll('.card');
+        const isPc = window.innerWidth > 768;
+        // 检测是否为iOS设备
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+                     (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        
+        cards.forEach(card => {
+            const text = card.textContent;
+            const isLongText = text.length > 10;
+            
+            if (isPc) {
+                // PC端
+                if (isLongText) {
+                    card.style.fontSize = '18px';
+                } else {
+                    card.style.fontSize = '20px';
+                }
+            } else {
+                // 移动端
+                if (isIOS) {
+                    // iOS设备字体更大
+                    if (isLongText) {
+                        card.style.fontSize = '16px'; // iOS长文本
+                    } else {
+                        card.style.fontSize = '18px'; // iOS普通文本
+                    }
+                } else {
+                    // 安卓设备
+                    if (isLongText) {
+                        card.style.fontSize = '14px';
+                    } else {
+                        card.style.fontSize = '16px';
+                    }
+                }
+            }
+        });
     }
 
     createCards(vocabulary) {
@@ -172,39 +213,84 @@ class WordGame {
     renderGameBoard() {
         this.gameBoard.innerHTML = '';
         
-        this.cards.forEach((card, index) => {
-            const cardElement = document.createElement('div');
-            cardElement.className = 'card';
-            cardElement.textContent = card.content;
-            
-            // 先清除任何可能的样式
-            cardElement.style.fontSize = '';
-            
-            // 根据平台和文本长度设置字体大小
-            const isLongText = card.content.length > 8;
-            const isPc = window.innerWidth > 768;
-            
-            if (isPc) {
-                // PC端
-                if (isLongText) {
-                    cardElement.style.fontSize = '20px';
-                } else {
-                    cardElement.style.fontSize = '20px';
-                }
-            } else {
-                // 移动端 - 增大字体
-                if (isLongText) {
-                    cardElement.style.fontSize = '15px'; // 长文本增大到15px（原14px）
-                } else {
-                    cardElement.style.fontSize = '16px'; // 普通文本增大到18px（原16px）
-                }
-            }
-            
-            cardElement.addEventListener('click', () => this.handleCardClick(index));
-            this.gameBoard.appendChild(cardElement);
-        });
+        // 设置正确的网格列数
+        if (window.innerWidth <= 768) {
+            this.gameBoard.style.gridTemplateColumns = "repeat(4, 1fr)";
+        } else {
+            this.gameBoard.style.gridTemplateColumns = "repeat(6, 1fr)";
+        }
         
-        this.adjustGameBoard();
+        // 创建一个临时元素用于测量文本宽度
+        const measurer = document.createElement('div');
+        measurer.className = 'card';
+        measurer.style.position = 'absolute';
+        measurer.style.visibility = 'hidden';
+        measurer.style.whiteSpace = 'nowrap'; // 不换行以获取完整宽度
+        document.body.appendChild(measurer);
+        
+        // 获取卡片宽度 (创建一个临时卡片来测量)
+        const tempCard = document.createElement('div');
+        tempCard.className = 'card';
+        tempCard.style.visibility = 'hidden';
+        this.gameBoard.appendChild(tempCard);
+        
+        // 等待DOM更新以获取卡片宽度
+        setTimeout(() => {
+            const cardWidth = tempCard.offsetWidth - 16; // 减去内边距
+            this.gameBoard.removeChild(tempCard);
+            
+            // 创建实际卡片并直接设置合适的字体
+            this.cards.forEach((card, index) => {
+                const cardElement = document.createElement('div');
+                cardElement.className = 'card';
+                cardElement.style.visibility = 'hidden'; // 先隐藏，避免闪烁
+                cardElement.textContent = card.content;
+                
+                // 直接设置字体大小（基于卡片宽度和文本测量）
+                this.setAppropriateTextSize(cardElement, card.content, cardWidth, measurer);
+                
+                cardElement.addEventListener('click', () => this.handleCardClick(index));
+                this.gameBoard.appendChild(cardElement);
+            });
+            
+            // 移除测量元素
+            document.body.removeChild(measurer);
+            
+            // 显示所有卡片 (设置好字体后再显示)
+            setTimeout(() => {
+                const allCards = this.gameBoard.querySelectorAll('.card');
+                allCards.forEach(card => {
+                    card.style.visibility = 'visible';
+                });
+            }, 50);
+        }, 10);
+    }
+
+    // 基于实际宽度设置合适的字体大小
+    setAppropriateTextSize(cardElement, text, cardWidth, measurer) {
+        const isPc = window.innerWidth > 768;
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+                    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        
+        // 默认字体大小
+        let fontSize = isPc ? 20 : (isIOS ? 18 : 16);
+        
+        // 测量文本宽度
+        measurer.style.fontSize = `${fontSize}px`;
+        measurer.textContent = text;
+        let textWidth = measurer.offsetWidth;
+        
+        // 文本宽度比例 (文本宽度与卡片宽度的比例)
+        const widthRatio = textWidth / cardWidth;
+        
+        // 如果文本太长 (超过卡片宽度的80%)
+        if (widthRatio > 0.8) {
+            // 根据比例计算合适的字体大小
+            fontSize = Math.max(isPc ? 18 : 14, Math.floor(fontSize / widthRatio * 0.8));
+        }
+        
+        // 设置计算后的字体大小
+        cardElement.style.fontSize = `${fontSize}px`;
     }
 
     handleCardClick(index) {

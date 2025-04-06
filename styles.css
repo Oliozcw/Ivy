@@ -13,6 +13,10 @@ body {
     padding: 20px;
     background-image: linear-gradient(45deg, #FFE5E5 25%, #FFF5F5 25%, #FFF5F5 50%, #FFE5E5 50%, #FFE5E5 75%, #FFF5F5 75%, #FFF5F5 100%);
     background-size: 40px 40px;
+    /* 现代系统UI字体 */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -141,36 +145,43 @@ body {
     box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
 }
 
+/* 游戏界面容器 */
+#gameScreen {
+    padding: 20px; /* 减小容器内边距 */
+}
+
+/* 游戏板布局 - 确保PC端6列 */
 .game-board {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 12px;
+    grid-template-columns: repeat(6, 1fr) !important; /* 强制PC端6列 */
+    gap: 10px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5px;
     justify-content: center;
+    width: 100%;
+    min-height: 300px; /* 给定最小高度防止布局移动 */
 }
 
-.game-board.six-columns {
-    grid-template-columns: repeat(6, 1fr) !important;
-}
-
+/* 卡片基础样式 */
 .card {
-    aspect-ratio: 1.5/1;
+    aspect-ratio: 3/2; /* 调整宽高比例更合理 */
     background: white;
-    border-radius: 12px;
+    border-radius: 8px; /* 减小圆角 */
     border: 2px solid #FFB6C1;
-    padding: 8px;
+    padding: 5px; /* 减小内边距 */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-weight: normal;
-    line-height: 1.3;
+    font-weight: 500; /* 增加字重，增强苹果设备上的可见性 */
+    line-height: 1.2;
     cursor: pointer;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 减小阴影 */
     transition: all 0.3s ease;
     word-break: break-word;
-    min-height: 45px;
+    min-height: 40px;
+    overflow: hidden; /* 确保文本不溢出 */
+    position: relative; /* 为可能的绝对定位元素提供参考 */
 }
 
 .card:hover {
@@ -256,6 +267,7 @@ body {
     }
 }
 
+/* 移动端强制4列 */
 @media (max-width: 768px) {
     .difficulty-card {
         width: 180px;
@@ -269,14 +281,16 @@ body {
     }
 
     .game-board {
-        padding: 10px;
-        gap: 8px;
+        grid-template-columns: repeat(4, 1fr) !important; /* 强制移动端4列 */
+        gap: 6px;
+        padding: 3px;
     }
     
     .card {
-        padding: 4px;
-        border-width: 1.5px;
-        border-radius: 8px;
+        border-width: 1.5px; /* 更细的边框 */
+        padding: 3px; /* 极小内边距 */
+        border-radius: 6px;
+        min-height: 30px;
     }
 }
 
@@ -293,17 +307,13 @@ body {
     }
 
     .game-board {
-        padding: 10px;
-        gap: 6px;
+        gap: 4px; /* 极小间距 */
+        padding: 2px;
     }
     
     .card {
-        font-size: 14px;
-        padding: 4px;
-        min-height: 30px;
-        border-width: 1.5px;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        border-width: 1px;
+        padding: 2px;
     }
 
     .card[data-long-text="true"] {
@@ -324,14 +334,18 @@ body {
     }
 }
 
-/* 游戏界面容器 */
-#gameScreen {
-    padding: 30px; /* PC端默认内边距 */
-}
-
-/* 移动端容器内边距调整 */
+/* 移动端响应式调整 */
 @media (max-width: 768px) {
     #gameScreen {
-        padding: 15px 10px; /* 左右设为10px */
+        padding: 10px; /* 手机端更小内边距 */
+    }
+}
+
+/* 专门针对iOS设备增大字体 */
+@supports (-webkit-touch-callout: none) {
+    /* iOS设备特有CSS */
+    .card {
+        /* iOS上字体大一些 */
+        font-size: 120% !important; 
     }
 } 
