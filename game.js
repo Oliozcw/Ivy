@@ -20,19 +20,19 @@ class WordGame {
         });
 
         // 预加载音频并启用自动播放
-        document.body.addEventListener('click', () => {
-            // 静音播放以解除浏览器限制
-            this.successSound.volume = 0;
-            this.completeSound.volume = 0;
-            this.successSound.play().then(() => {
-                this.successSound.pause();
-                this.successSound.currentTime = 0;
-            }).catch(() => {});
-            this.completeSound.play().then(() => {
-                this.completeSound.pause();
-                this.completeSound.currentTime = 0;
-            }).catch(() => {});
-        }, { once: true });
+        // document.body.addEventListener('click', () => {
+        //     // 静音播放以解除浏览器限制
+        //     this.successSound.volume = 0;
+        //     this.completeSound.volume = 0;
+        //     this.successSound.play().then(() => {
+        //         this.successSound.pause();
+        //         this.successSound.currentTime = 0;
+        //     }).catch(() => {});
+        //     this.completeSound.play().then(() => {
+        //         this.completeSound.pause();
+        //         this.completeSound.currentTime = 0;
+        //     }).catch(() => {});
+        // }, { once: true });
     }
 
     initializeElements() {
